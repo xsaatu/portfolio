@@ -241,7 +241,7 @@
                             <textarea type="text" id="message" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary  focus:ring-1 focus:border-primary h-32"></textarea>
                         </div>
                         <div class="w-full px-4">
-                            <button class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Kirim</button>
+                            <button class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500" onclick="sendMail()">Kirim</button>
                         </div>
                     </div>
                 </form>
@@ -332,8 +332,16 @@
         <!-- Backto Home End-->
 
 
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+            emailjs.init("OzXVnbb-l9Z4byEhA");
+            })();
+        </script>
 
-
+        <script src="dist/js/index.js"></script>
         <script src="dist/js/script.js"></script>
 </body>
 </html>
